@@ -1,0 +1,20 @@
+public class BankApp {
+    public static void main(String[] args) {
+        Bank myBank = new Bank("OwlBank");
+
+        // Add Customers
+        myBank.addCustomer("Aaron");
+        myBank.addCustomer("Larry");
+
+        // Add Transactions
+        myBank.addTransaction("Aaron", 150.0);
+        myBank.addTransaction("Aaron", -45.5);
+        myBank.addTransaction("Larry", 300.0);
+        myBank.addTransaction("Larry", -75.25);
+
+        // Print Statements
+        myBank.printStatement("Aaron");
+        System.out.println("------------------------");
+        myBank.printStatement("Larry");
+    }
+}
